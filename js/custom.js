@@ -30,3 +30,9 @@ $('.carousel').each(function() {
 //$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 //" - $" + $( "#slider-range" ).slider( "values", 1 ) );
 } )(jQuery);
+
+
+$('input[type=checkbox]').on('change', function() {
+  var div = $(this).closest('.form-check');
+  $(this).is(":checked") ? div.addClass("light-blue-bold") : div.removeClass("light-blue-bold");
+});

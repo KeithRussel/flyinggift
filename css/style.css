@@ -43,6 +43,11 @@ body h6 {
 	color: #0493ce;
 }
 
+.light-blue-bold {
+	color: #0493ce;
+	font-weight: bold;
+}
+
 .orange {
 	color: #fd7138;
 }
