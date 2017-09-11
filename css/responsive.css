@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px){
+    #intro div.description {
+        padding: 0;
+    }
+    
+    #intro .featured {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .heading-section>a.btn {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+}
