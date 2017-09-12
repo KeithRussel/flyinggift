@@ -15,6 +15,8 @@ $('.carousel').each(function() {
     });
 });
 
+$( "ul#menu-cat-menu li" ).last().addClass( "borderBot" );
+
 (function($) {
 	$( "#slider-range" ).slider({
 		range: true,
@@ -36,3 +38,4 @@ $('input[type=checkbox]').on('change', function() {
   var div = $(this).closest('.form-check');
   $(this).is(":checked") ? div.addClass("light-blue-bold") : div.removeClass("light-blue-bold");
 });
+	

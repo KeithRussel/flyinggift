@@ -78,7 +78,7 @@ a.btn-read {
 	border: 2px solid #0493ce;
 	font-size: 12px;
 	font-weight: 700 !important;
-	padding: 10px 30px;
+	padding: 10px 25px;
 	margin: auto;
 	text-transform: uppercase;
 }
@@ -177,7 +177,8 @@ button.btn-request:hover {
 }
 
 body p,
-body a {
+body a,
+.meta-post {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 }
@@ -894,40 +895,50 @@ ul.social-icons {
 
 /*Sidebar Menu*/
 
-.side-menu {
+.side-menu, .cat-menu {
 	border: 1px solid #eee;
 	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
-#inner-side-menu h3 {
+#inner-side-menu h3, #inner-cat-menu h3 {
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	background-color: #fd7138;
-	padding: 8px;
+	padding: 10px;
 	color: #fff;
 	text-transform: uppercase;
 	margin: 0;
 	font-size: 24px;
 }
 
-ul#menu-side-menu {
+ul#menu-side-menu, ul#menu-cat-menu {
 	margin: 0px 15px;
 	padding: 0;
 }
 
-ul#menu-side-menu li {
+ul#menu-side-menu li, ul#menu-cat-menu li {
 	border-bottom: 1px solid #eee;
 	list-style: none;
 }
 
-ul#menu-side-menu li a {
+ul#menu-side-menu li a, ul#menu-cat-menu li a {
 	color: #007bff;
 	cursor: pointer;
 	display: block;
 	padding: 5px 0;
 }
 
-ul#menu-side-menu li a:hover {
+ul#menu-cat-menu>li>a>span {
+	color: #6c6c6c;
+	font-weight: bold;
+}
+
+.borderBot {
+	border-bottom: 0!important;
+}
+
+ul#menu-side-menu li a:hover, ul#menu-cat-menu li a:hover {
 	color: #fd7138;
 }
 
@@ -1042,4 +1053,64 @@ ul#menu-side-menu li a:hover {
 	height: 210px;
 	width: 100%;
 	object-fit: cover;
+}
+
+/*
+##############################
+#######  ARCHIVE PAGE  #######
+##############################
+*/
+
+#archive {
+	background-color: #ffffff;
+	padding: 30px;
+}
+
+#archive hr {
+	margin: 20px 0;
+}
+
+.archive-img {
+    height: 160px;
+    width: 100%;
+    border: 1px solid #eee;
+    background-color: #fbfbfb;
+	margin-top: 10px;
+}
+
+.archive-img img {
+	height: 35px;
+	width: 100%;
+}
+
+.meta-post {
+	font-size: 12px;
+	color: #6c6c6c;
+}
+
+.page-item {
+	margin-left: 10px;
+}
+
+.page-item:first-child a.page-link {
+	border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.page-item:last-child a.page-link {
+	border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a.page-link {
+	border-radius: 10px;
+}
+
+a.page-link:focus, a.page-link:hover {
+	background-color: #fd7138;
+    color: #fff;
+}
+
+.archive-content {
+	margin-bottom: 200px;
 }
