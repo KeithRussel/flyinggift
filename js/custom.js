@@ -35,7 +35,7 @@ $( "ul#menu-cat-menu li" ).last().addClass( "borderBot" );
 
 
 $('input[type=checkbox]').on('change', function() {
-  var div = $(this).closest('.form-check');
+  var div = $(this).closest('.req-check');
   $(this).is(":checked") ? div.addClass("light-blue-bold") : div.removeClass("light-blue-bold");
 });
 	
