@@ -31,11 +31,20 @@ body h6 {
 	font-weight: 300;
 }
 
+body p,
+body a,
+.meta-post,
+label {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
 #location .title,
 #featured .title,
 #popular .title {
 	text-align: center;
 }
+
 
 /*Colors*/
 
@@ -55,6 +64,7 @@ body h6 {
 .white {
 	color: #fff;
 }
+
 
 /*Buttons*/
 
@@ -138,6 +148,20 @@ body .btn-link:hover {
 	border: 1px solid;
 }
 
+.custom-nav {
+	float: right;
+}
+
+.custom-nav .btn-sign {
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid #0493ce;
+	background-color: transparent;
+	color: #007bff;
+	font-size: 12px;
+	padding: 10px 25px;
+}
+
 button.btn-trips,
 button.btn-request {
 	font-weight: bold;
@@ -154,6 +178,10 @@ button.btn-request:hover {
 	-moz-transition: background-color ease-out .5s;
 	-o-transition: background-color ease-out .5s;
 	transition: background-color ease-out .5s;
+}
+
+.search-group .form-control:focus {
+	border-color: rgba(0, 0, 0, .15);
 }
 
 
@@ -174,13 +202,6 @@ button.btn-request:hover {
 
 .ui-widget.ui-widget-content {
 	height: 5px!important;
-}
-
-body p,
-body a,
-.meta-post {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
 }
 
 .description {
@@ -264,7 +285,8 @@ body a,
 
 .search-btn .btn:hover,
 .btn-group .btn:hover,
-.email-btn .btn:hover {
+.email-btn .btn:hover,
+.custom-nav .btn-sign:hover {
 	background-color: #0493ce;
 	border-color: #0493ce;
 	-webkit-transition: background-color ease-out .5s;
@@ -895,13 +917,15 @@ ul.social-icons {
 
 /*Sidebar Menu*/
 
-.side-menu, .cat-menu {
+.side-menu,
+.cat-menu {
 	border: 1px solid #eee;
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
 
-#inner-side-menu h3, #inner-cat-menu h3 {
+#inner-side-menu h3,
+#inner-cat-menu h3 {
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 	background-color: #fd7138;
@@ -912,17 +936,20 @@ ul.social-icons {
 	font-size: 24px;
 }
 
-ul#menu-side-menu, ul#menu-cat-menu {
+ul#menu-side-menu,
+ul#menu-cat-menu {
 	margin: 0px 15px;
 	padding: 0;
 }
 
-ul#menu-side-menu li, ul#menu-cat-menu li {
+ul#menu-side-menu li,
+ul#menu-cat-menu li {
 	border-bottom: 1px solid #eee;
 	list-style: none;
 }
 
-ul#menu-side-menu li a, ul#menu-cat-menu li a {
+ul#menu-side-menu li a,
+ul#menu-cat-menu li a {
 	color: #007bff;
 	cursor: pointer;
 	display: block;
@@ -938,7 +965,8 @@ ul#menu-cat-menu>li>a>span {
 	border-bottom: 0!important;
 }
 
-ul#menu-side-menu li a:hover, ul#menu-cat-menu li a:hover {
+ul#menu-side-menu li a:hover,
+ul#menu-cat-menu li a:hover {
 	color: #fd7138;
 }
 
@@ -1055,6 +1083,7 @@ ul#menu-side-menu li a:hover, ul#menu-cat-menu li a:hover {
 	object-fit: cover;
 }
 
+
 /*
 ##############################
 #######  ARCHIVE PAGE  #######
@@ -1071,10 +1100,10 @@ ul#menu-side-menu li a:hover, ul#menu-cat-menu li a:hover {
 }
 
 .archive-img {
-    height: 160px;
-    width: 100%;
-    border: 1px solid #eee;
-    background-color: #fbfbfb;
+	height: 160px;
+	width: 100%;
+	border: 1px solid #eee;
+	background-color: #fbfbfb;
 	margin-top: 10px;
 }
 
@@ -1094,23 +1123,113 @@ ul#menu-side-menu li a:hover, ul#menu-cat-menu li a:hover {
 
 .page-item:first-child a.page-link {
 	border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 .page-item:last-child a.page-link {
 	border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 a.page-link {
 	border-radius: 10px;
 }
 
-a.page-link:focus, a.page-link:hover {
+a.page-link:focus,
+a.page-link:hover {
 	background-color: #fd7138;
-    color: #fff;
+	color: #fff;
 }
 
 .archive-content {
 	margin-bottom: 200px;
+}
+
+
+/*
+##############################
+#######  SIGN UP PAGE  #######
+##############################
+*/
+
+.wrapper {
+	background-image: url(../images/girlbg.png);
+	background-position: top;
+	background-size: cover;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.panel {
+	padding: 40px 80px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.signinForm,
+.signupForm {
+	padding: 125px 0 270px;
+}
+
+.signinForm h1,
+.signupForm h1 {
+	font-size: 48px;
+}
+
+.btn-fb {
+	background-color: #4064ac;
+}
+
+.btn-google {
+	background-color: #f4310c;
+}
+
+.btn-fb,
+.btn-google {
+	font-size: 12px;
+	margin: 0 10px;
+	padding: 8px 30px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.btn-create {
+	font-size: 12px;
+	margin: 0 10px;
+	padding: 8px 15px;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	background-color: #fd7138;
+	cursor: pointer;
+}
+
+.panel .form-control {
+	padding: 6px 12px;
+}
+
+.panel>.custom-checkbox>span,
+.panel>.custom-checkbox>.acc-text {
+	font-size: 12px;
+}
+
+.panel .form-group label {
+	font-weight: bold;
+	padding: 10px 0;
+	text-align: right;
 }
