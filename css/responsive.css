@@ -1,10 +1,46 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 375px) {
+    #wrapper {
+        padding: 15px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .img-banner {
+        height: 175px;
+    }
+
+    .settings-form .form-group label {
+        text-align: left;
+    }
+
+    .setting-tabs li a span,
+    .notification-tabs li a span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
     #intro div.description {
         padding: 0;
     }
-    
+
     #intro .featured {
         padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .setting-tabs li a i,
+    .notification-tabs li a i {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .settings-form .form-group input,
+    .settings-form .form-group select {
+        width: 100%;
     }
 }
 
@@ -13,5 +49,11 @@
         position: absolute;
         top: 0;
         right: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img-banner img {
+        top: 0;
     }
 }
